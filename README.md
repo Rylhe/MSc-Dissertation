@@ -1,9 +1,6 @@
-Evaluating Time-Windowed Learning Behavior Features for Early Student Outcome Prediction Using the Open University Learning Analytics Dataset
+ Evaluating Time-Windowed Learning Behavior Features for Early Student Outcome Prediction Using the Open University Learning Analytics Dataset
 
-
- =========================================================
  Research Aim and Research Questions
- =========================================================
 
  Project title:
  Time-windowed learning behavior representation for early student outcome prediction using OULAD.
@@ -55,9 +52,9 @@ Evaluating Time-Windowed Learning Behavior Features for Early Student Outcome Pr
  Week 6: Days 0--41
  Week 8: Days 0--55
 
- =========================================================
+
  Prediction Unit and Target
- =========================================================
+
 
  Prediction unit:
  One student registration in one module presentation.
@@ -73,9 +70,9 @@ Evaluating Time-Windowed Learning Behavior Features for Early Student Outcome Pr
  Total prediction units before modelling exclusions:
  32,593 student--module--presentation registrations.
 
- =========================================================
+
  Feature Groups
- =========================================================
+
 
  1. Static Student and Course Features
 
@@ -149,9 +146,9 @@ Evaluating Time-Windowed Learning Behavior Features for Early Student Outcome Pr
  Students with no submitted assessments should be retained rather
  than removed.
 
- =========================================================
+
  Feature Representation Experiments
- =========================================================
+
 
  F1: Static features only
 
@@ -171,9 +168,9 @@ Evaluating Time-Windowed Learning Behavior Features for Early Student Outcome Pr
  cumulative activity summaries while holding assessment information
  broadly constant.
 
- =========================================================
+
  Experimental Design
- =========================================================
+
 
  Experiment 1: Outcome Representation
 
@@ -213,9 +210,9 @@ Evaluating Time-Windowed Learning Behavior Features for Early Student Outcome Pr
  To identify when early learning records become sufficiently
  informative for practically useful prediction.
 
- =========================================================
+
  Models
- =========================================================
+
 
  Baseline model:
  Logistic Regression
@@ -235,9 +232,9 @@ Evaluating Time-Windowed Learning Behavior Features for Early Student Outcome Pr
  representations. The dissertation is not designed primarily as
  a classifier-ranking study.
 
- =========================================================
+
  Data Splitting and Preprocessing
- =========================================================
+
 
  The same data-partitioning strategy should be used across feature
  representations and prediction cutoffs to support fair comparison.
@@ -258,9 +255,9 @@ Evaluating Time-Windowed Learning Behavior Features for Early Student Outcome Pr
  consistent random seed
  preprocessing fitted on training data only
 
- =========================================================
+
  Temporal Leakage Prevention
- =========================================================
+
 
  Every prediction dataset must be reconstructed separately at each
  cutoff.
@@ -287,9 +284,9 @@ Evaluating Time-Windowed Learning Behavior Features for Early Student Outcome Pr
  weekly course windows. It may instead be represented separately
  as pre-course activity if included.
 
- =========================================================
+
  Evaluation
- =========================================================
+
 
  Primary metric:
  Macro F1
@@ -312,9 +309,9 @@ Evaluating Time-Windowed Learning Behavior Features for Early Student Outcome Pr
  Multiclass ROC-AUC should only be reported if a clearly specified
  one-vs-rest or one-vs-one formulation is used.
 
- =========================================================
+
  Interpretation
- =========================================================
+
 
  SHAP will be used primarily for the tree-based models.
 
@@ -329,9 +326,9 @@ Evaluating Time-Windowed Learning Behavior Features for Early Student Outcome Pr
  SHAP values will be interpreted as model-based associations rather
  than causal effects.
 
- =========================================================
+
  Methodological Workflow
- =========================================================
+
 
  1. Data Cleaning and Validation
  Clean and integrate the OULAD tables and validate keys, dates,
